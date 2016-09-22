@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160920005936) do
+ActiveRecord::Schema.define(version: 20160922035945) do
 
-  create_table "voters", force: :cascade do |t|
+  create_table "votes", force: :cascade do |t|
     t.string   "uuid"
     t.string   "vote"
     t.datetime "created_at", null: false

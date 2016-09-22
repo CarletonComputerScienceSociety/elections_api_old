@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  get '/vote', to: 'voters#vote'
-  post '/validate', to: 'voters#validate'
+  post '/vote', to: 'votes#vote'
+  post '/validate', to: 'votes#validate'
 end
