@@ -43,7 +43,7 @@ class VotesController < ApplicationController
       return nil
     end
 
-    uuid = "a fake uuid"
+    uuid = params['x']
 
     if Vote.where(uuid: uuid).length >= 2
       render json: {"error": "You already voted! Please wait for news on the results on our website and in your emails", "error_code": "double_vote"}
