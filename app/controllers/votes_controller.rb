@@ -45,7 +45,7 @@ class VotesController < ApplicationController
 
     uuid = params['x']
 
-    if Vote.where(uuid: uuid).length >= 5
+    if Vote.where(uuid: uuid).length >= 1
       render json: {"error": "You already voted! Please wait for news on the results on our website and in your emails", "error_code": "double_vote"}
       return nil
     end
